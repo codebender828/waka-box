@@ -7,10 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Install dependencies
-        run: npm ci
-      - name: Update Codebending Schedule
-        run: node ./index.js
+      - name: Update gist
+        uses: matchai/waka-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 87b901869d333b234fc55eb50bd6ef68
