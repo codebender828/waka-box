@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Update gist        
-        run: node ./dist/index.js
+        run: node ./index.js
         env:           
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 2ad3a1f457ee248cba3c0ed54ae56d10
