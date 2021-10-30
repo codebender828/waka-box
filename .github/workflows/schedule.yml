@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-        name: Install dependencies
+      - name: Install dependencies
         run: npm ci
       - name: Update Codebending Schedule
         uses: matchai/waka-box@master
